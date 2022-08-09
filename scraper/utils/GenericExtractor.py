@@ -6,7 +6,7 @@ from google.cloud import storage
 from google.oauth2 import service_account
 
 
-if config.ENVIRONMENT == 'dev':
+if config.ENVIRONMENT == 'dev-local':
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'keyfile.json'
 
 

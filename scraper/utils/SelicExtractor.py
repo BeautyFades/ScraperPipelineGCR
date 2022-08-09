@@ -10,7 +10,7 @@ from utils.GenericExtractor import GenericExtractor
 import config as config
 
 
-if config.ENVIRONMENT == 'dev':
+if config.ENVIRONMENT == 'dev-local':
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'keyfile.json'
 
 

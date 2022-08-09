@@ -9,7 +9,7 @@ from utils.DBConnector import DBConnector
 import pandas as pd
 
 
-if config.ENVIRONMENT == 'dev':
+if config.ENVIRONMENT == 'dev-local':
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'keyfile.json'
 
 l = RESTAPILogger()

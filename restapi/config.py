@@ -1,9 +1,9 @@
 import os
 from google.cloud import secretmanager
 
-ENVIRONMENT = 'cloudrun-dev' # Either dev, cloudrun-dev or cloudrun-prd.
+ENVIRONMENT = 'dev-local' # Either dev-local, dev-cloudrun or prd-cloudrun.
 
-if ENVIRONMENT == 'dev':
+if ENVIRONMENT == 'dev-local':
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'keyfile.json'
 
 SOURCE_BUCKET_NAME = 'economia-webscraper'

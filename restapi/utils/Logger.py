@@ -5,7 +5,7 @@ from google.cloud import logging
 
 class RESTAPILogger():
     def __init__(self):
-        if config.ENVIRONMENT != 'dev':
+        if config.ENVIRONMENT != 'dev-local':
             client = logging.Client()
             client.setup_logging()
 
